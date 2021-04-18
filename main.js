@@ -10,3 +10,9 @@ function calcResult() {
 
     divResult.innerHTML = `O valor em dólar é ${formatter.format(valueDolar)}`;
 }
+
+document.querySelector (".valueInput").addEventListener("keyup", function(event) {
+    if (event.key == "Enter") {
+        calcResult();
+    }
+})
